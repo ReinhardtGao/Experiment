@@ -4,13 +4,14 @@ import org.jetbrains.annotations.Contract;
 
 public class DayCounter {
     public static void main(String[] arguments){
-        int yearIn = 2015;
-        int monthIn = 2;
+        int yearIn = 2016;
+        int monthIn;
         if (arguments.length > 0)
-            monthIn = Integer.parseInt(arguments[0]);
-        if (arguments.length > 1)
-            yearIn = Integer.parseInt(arguments[1]);
-        System.out.println(monthIn + "/" + yearIn + " has " + countDays(monthIn,yearIn) + " days.");
+            yearIn = Integer.parseInt(arguments[0]);
+        for (monthIn = 1; monthIn < 13; monthIn++){
+            for (int days = 1; days <= countDays(monthIn, yearIn); days++)
+                System.out.println(monthIn + "/" + days + "/" + yearIn);
+        }
     }
 
     @Contract(pure = true)
