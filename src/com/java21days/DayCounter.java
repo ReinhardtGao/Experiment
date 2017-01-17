@@ -14,7 +14,7 @@ public class DayCounter {
     }
 
     @Contract(pure = true)
-    private static int countDays(int month, int year){
+    public static int countDays(int month, int year){
         int count = -1;
         switch (month){
             case 1:
