@@ -6,12 +6,14 @@ public class Item implements Comparable{
     private double retail;
     private int quantity;
     private double price;
+    private boolean noDiscount;
 
-    Item(String idIn, String nameIN, String retailIn, String qIn){
+    Item(String idIn, String nameIN, String retailIn, String qIn, String disIn){
         id = idIn;
         name = nameIN;
         retail = Double.parseDouble(retailIn);
         quantity = Integer.parseInt(qIn);
+        noDiscount = disIn.equals("TRUE");
 
         if (quantity > 400)
             price = retail * .50;
@@ -20,6 +22,9 @@ public class Item implements Comparable{
         else
             price = retail * .70;
         price = Math.floor( price * 100 + .5) / 100;
+        if (noDiscount) {
+            price = retail;
+        }
     }
 
     public int compareTo(Object obj){
