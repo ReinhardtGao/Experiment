@@ -1,3 +1,3 @@
-# Experiment
+# EXPERIMENT
 
-# This is just a project for Java learning.
+# THIS IS JUST A PROJECT FOR JAVA LEARNING.
