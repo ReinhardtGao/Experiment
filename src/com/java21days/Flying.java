@@ -1,10 +1,9 @@
 package com.java21days;
 
-import org.jetbrains.annotations.Contract;
 
 public class Flying {
 
-    @Contract(pure = true)
+
     private static double Calculate(double x, double y){
         return y/x;
     }
