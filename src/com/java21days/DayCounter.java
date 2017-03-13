@@ -1,6 +1,5 @@
 package com.java21days;
 
-import org.jetbrains.annotations.Contract;
 
 public class DayCounter {
     public static void main(String[] arguments){
@@ -14,7 +13,6 @@ public class DayCounter {
         }
     }
 
-    @Contract(pure = true)
     public static int countDays(int month, int year){
         int count = -1;
         switch (month){
