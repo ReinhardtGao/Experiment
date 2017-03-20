@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="DiceRoller1">
+  <library name="xom-1.2.10">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/bin/DiceRoller.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../XOM/xom-1.2.10.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
