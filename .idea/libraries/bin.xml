@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="xom-1.2.10">
+  <library name="bin">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../XOM/xom-1.2.10.jar!/" />
+      <root url="file://D:/JavaLibs/XOM/bin" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
